@@ -4,26 +4,27 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Dashboard | UBold - Responsive Admin Dashboard Template</title>
+    <title>Point of Sale System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="  {{ asset('backend/assets/images/favicon.ico') }}">
 
     <!-- Plugins css -->
-    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/selectize/css/selectize.bootstrap3.css" rel="stylesheet" type="text/css" />
+    <link href="  {{ asset('backend/assets/libs/flatpickr/flatpickr.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="  {{ asset('backend/assets/libs/selectize/css/selectize.bootstrap3.css') }}" rel="stylesheet"
+        type="text/css" />
 
     <!-- Bootstrap css -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="  {{ asset('backend/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App css -->
-    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="  {{ asset('backend/assets/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
     <!-- icons -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="  {{ asset('backend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- Head js -->
-    <script src="assets/js/head.js"></script>
+    <script src="  {{ asset('backend/assets/js/head.js') }}"></script>
 
 </head>
 
@@ -84,8 +85,8 @@
                                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                                             <div class="d-flex align-items-start">
                                                 <img class="d-flex me-2 rounded-circle"
-                                                    src="assets/images/users/user-2.jpg" alt="Generic placeholder image"
-                                                    height="32">
+                                                    src="  {{ asset('backend/assets/images/users/user-2.jpg') }}"
+                                                    alt="Generic placeholder image" height="32">
                                                 <div class="w-100">
                                                     <h5 class="m-0 font-14">Erwin E. Brown</h5>
                                                     <span class="font-12 mb-0">UI Designer</span>
@@ -97,8 +98,8 @@
                                         <a href="javascript:void(0);" class="dropdown-item notify-item">
                                             <div class="d-flex align-items-start">
                                                 <img class="d-flex me-2 rounded-circle"
-                                                    src="assets/images/users/user-5.jpg" alt="Generic placeholder image"
-                                                    height="32">
+                                                    src="  {{ asset('backend/') }}assets/images/users/user-5.jpg"
+                                                    alt="Generic placeholder image" height="32">
                                                 <div class="w-100">
                                                     <h5 class="m-0 font-14">Jacob Deo</h5>
                                                     <span class="font-12 mb-0">Developer</span>
@@ -145,19 +146,22 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/slack.png" alt="slack">
+                                            <img src="  {{ asset('backend/assets/images/brands/slack.png') }}"
+                                                alt="slack">
                                             <span>Slack</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/github.png" alt="Github">
+                                            <img src="  {{ asset('backend/assets/images/brands/github.png') }}"
+                                                alt="Github">
                                             <span>GitHub</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                            <img src="  {{ asset('backend/assets/images/brands/dribbble.png') }}"
+                                                alt="dribbble">
                                             <span>Dribbble</span>
                                         </a>
                                     </div>
@@ -166,19 +170,22 @@
                                 <div class="row g-0">
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                            <img src="  {{ asset('backend/assets/images/brands/bitbucket.png') }}"
+                                                alt="bitbucket">
                                             <span>Bitbucket</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                            <img src="  {{ asset('backend/assets/images/brands/dropbox.png') }}"
+                                                alt="dropbox">
                                             <span>Dropbox</span>
                                         </a>
                                     </div>
                                     <div class="col">
                                         <a class="dropdown-icon-item" href="#">
-                                            <img src="assets/images/brands/g-suite.png" alt="G Suite">
+                                            <img src="  {{ asset('backend/assets/images/brands/g-suite.png') }}"
+                                                alt="G Suite">
                                             <span>G Suite</span>
                                         </a>
                                     </div>
@@ -193,32 +200,33 @@
                         <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light"
                             data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                             aria-expanded="false">
-                            <img src="assets/images/flags/us.jpg" alt="user-image" height="16">
+                            <img src="  {{ asset('backend/assets/images/flags/us.jpg') }}" alt="user-image"
+                                height="16">
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">German</span>
+                                <img src="  {{ asset('backend/assets/images/flags/germany.jpg') }}" alt="user-image"
+                                    class="me-1" height="12"> <span class="align-middle">German</span>
                             </a>
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Italian</span>
+                                <img src="  {{ asset('backend/assets/images/flags/italy.jpg') }}" alt="user-image"
+                                    class="me-1" height="12"> <span class="align-middle">Italian</span>
                             </a>
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Spanish</span>
+                                <img src="  {{ asset('backend/assets/images/flags/spain.jpg') }}" alt="user-image"
+                                    class="me-1" height="12"> <span class="align-middle">Spanish</span>
                             </a>
 
                             <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item">
-                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1"
-                                    height="12"> <span class="align-middle">Russian</span>
+                                <img src="  {{ asset('backend/assets/images/flags/russia.jpg') }}" alt="user-image"
+                                    class="me-1" height="12"> <span class="align-middle">Russian</span>
                             </a>
 
                         </div>
@@ -248,8 +256,8 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item active">
                                     <div class="notify-icon">
-                                        <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle"
-                                            alt="" />
+                                        <img src="  {{ asset('backend/assets/images/users/user-1.jpg') }}"
+                                            class="img-fluid rounded-circle" alt="" />
                                     </div>
                                     <p class="notify-details">Cristina Pride</p>
                                     <p class="text-muted mb-0 user-msg">
@@ -270,8 +278,8 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="notify-icon">
-                                        <img src="assets/images/users/user-4.jpg" class="img-fluid rounded-circle"
-                                            alt="" />
+                                        <img src="  {{ asset('backend/') }}assets/images/users/user-4.jpg"
+                                            class="img-fluid rounded-circle" alt="" />
                                     </div>
                                     <p class="notify-details">Karen Robinson</p>
                                     <p class="text-muted mb-0 user-msg">
@@ -325,7 +333,8 @@
                         <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light"
                             data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                             aria-expanded="false">
-                            <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                            <img src="  {{ asset('backend/assets/images/users/user-1.jpg') }}" alt="user-image"
+                                class="rounded-circle">
                             <span class="pro-user-name ms-1">
                                 Geneva <i class="mdi mdi-chevron-down"></i>
                             </span>
@@ -377,21 +386,25 @@
                 <div class="logo-box">
                     <a href="index.html" class="logo logo-dark text-center">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                            <img src="  {{ asset('backend/assets/images/logo-sm.png') }}" alt=""
+                                height="22">
                             <!-- <span class="logo-lg-text-light">UBold</span> -->
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="" height="20">
+                            <img src="  {{ asset('backend/assets/images/logo-dark.png') }}" alt=""
+                                height="20">
                             <!-- <span class="logo-lg-text-light">U</span> -->
                         </span>
                     </a>
 
                     <a href="index.html" class="logo logo-light text-center">
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                            <img src="  {{ asset('backend/assets/images/logo-sm.png') }}" alt=""
+                                height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="assets/images/logo-light.png" alt="" height="20">
+                            <img src="  {{ asset('backend/assets/images/logo-light.png') }}" alt=""
+                                height="20">
                         </span>
                     </a>
                 </div>
@@ -575,8 +588,8 @@
 
                 <!-- User box -->
                 <div class="user-box text-center">
-                    <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme"
-                        class="rounded-circle avatar-md">
+                    <img src="  {{ asset('backend/assets/images/users/user-1.jpg') }}" alt="user-img"
+                        title="Mat Helme" class="rounded-circle avatar-md">
                     <div class="dropdown">
                         <a href="javascript: void(0);" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block"
                             data-bs-toggle="dropdown">Geneva Kennedy</a>
@@ -1360,588 +1373,8 @@
         <!-- ============================================================== -->
 
         <div class="content-page">
-            <div class="content">
 
-                <!-- Start Content-->
-                <div class="container-fluid">
-
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box">
-                                <div class="page-title-right">
-                                    <form class="d-flex align-items-center mb-3">
-                                        <div class="input-group input-group-sm">
-                                            <input type="text" class="form-control border-0" id="dash-daterange">
-                                            <span class="input-group-text bg-blue border-blue text-white">
-                                                <i class="mdi mdi-calendar-range"></i>
-                                            </span>
-                                        </div>
-                                        <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-2">
-                                            <i class="mdi mdi-autorenew"></i>
-                                        </a>
-                                        <a href="javascript: void(0);" class="btn btn-blue btn-sm ms-1">
-                                            <i class="mdi mdi-filter-variant"></i>
-                                        </a>
-                                    </form>
-                                </div>
-                                <h4 class="page-title">Dashboard</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end page title -->
-
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div
-                                                class="avatar-lg rounded-circle bg-primary border-primary border shadow">
-                                                <i class="fe-heart font-22 avatar-title text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-end">
-                                                <h3 class="text-dark mt-1">$<span
-                                                        data-plugin="counterup">58,947</span></h3>
-                                                <p class="text-muted mb-1 text-truncate">Total Revenue</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div>
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div
-                                                class="avatar-lg rounded-circle bg-success border-success border shadow">
-                                                <i class="fe-shopping-cart font-22 avatar-title text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-end">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">127</span>
-                                                </h3>
-                                                <p class="text-muted mb-1 text-truncate">Today's Sales</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div>
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="avatar-lg rounded-circle bg-info border-info border shadow">
-                                                <i class="fe-bar-chart-line- font-22 avatar-title text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-end">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">0.58</span>%
-                                                </h3>
-                                                <p class="text-muted mb-1 text-truncate">Conversion</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div>
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-
-                        <div class="col-md-6 col-xl-3">
-                            <div class="widget-rounded-circle card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div
-                                                class="avatar-lg rounded-circle bg-warning border-warning border shadow">
-                                                <i class="fe-eye font-22 avatar-title text-white"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="text-end">
-                                                <h3 class="text-dark mt-1"><span data-plugin="counterup">78.41</span>k
-                                                </h3>
-                                                <p class="text-muted mb-1 text-truncate">Today's Visits</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end row-->
-                                </div>
-                            </div> <!-- end widget-rounded-circle-->
-                        </div> <!-- end col-->
-                    </div>
-                    <!-- end row-->
-
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Sales Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Profit</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-0">Total Revenue</h4>
-
-                                    <div class="widget-chart text-center" dir="ltr">
-
-                                        <div id="total-revenue" class="mt-0" data-colors="#f1556c"></div>
-
-                                        <h5 class="text-muted mt-0">Total sales made today</h5>
-                                        <h2>$178</h2>
-
-                                        <p class="text-muted w-75 mx-auto sp-line-2">Traditional heading elements are
-                                            designed to work best in the meat of your page content.</p>
-
-                                        <div class="row mt-3">
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Target</p>
-                                                <h4><i class="fe-arrow-down text-danger me-1"></i>$7.8k</h4>
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Last week</p>
-                                                <h4><i class="fe-arrow-up text-success me-1"></i>$1.4k</h4>
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="text-muted font-15 mb-1 text-truncate">Last Month</p>
-                                                <h4><i class="fe-arrow-down text-danger me-1"></i>$15k</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div> <!-- end card -->
-                        </div> <!-- end col-->
-
-                        <div class="col-lg-8">
-                            <div class="card">
-                                <div class="card-body pb-2">
-                                    <div class="float-end d-none d-md-inline-block">
-                                        <div class="btn-group mb-2">
-                                            <button type="button" class="btn btn-xs btn-light">Today</button>
-                                            <button type="button" class="btn btn-xs btn-light">Weekly</button>
-                                            <button type="button" class="btn btn-xs btn-secondary">Monthly</button>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">Sales Analytics</h4>
-
-                                    <div dir="ltr">
-                                        <div id="sales-analytics" class="mt-4" data-colors="#1abc9c,#4a81d4"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end card -->
-                        </div> <!-- end col-->
-                    </div>
-                    <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">Top 5 Users Balances</h4>
-
-                                    <div class="table-responsive">
-                                        <table
-                                            class="table table-borderless table-hover table-nowrap table-centered m-0">
-
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th colspan="2">Profile</th>
-                                                    <th>Currency</th>
-                                                    <th>Balance</th>
-                                                    <th>Reserved in orders</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-2.jpg" alt="contact-img"
-                                                            title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Tomaslau</h5>
-                                                        <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="mdi mdi-currency-btc text-primary"></i> BTC
-                                                    </td>
-
-                                                    <td>
-                                                        0.00816117 BTC
-                                                    </td>
-
-                                                    <td>
-                                                        0.00097036 BTC
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-plus"></i></a>
-                                                        <a href="javascript: void(0);"
-                                                            class="btn btn-xs btn-danger"><i
-                                                                class="mdi mdi-minus"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-3.jpg" alt="contact-img"
-                                                            title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Erwin E. Brown</h5>
-                                                        <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="mdi mdi-currency-eth text-primary"></i> ETH
-                                                    </td>
-
-                                                    <td>
-                                                        3.16117008 ETH
-                                                    </td>
-
-                                                    <td>
-                                                        1.70360009 ETH
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-plus"></i></a>
-                                                        <a href="javascript: void(0);"
-                                                            class="btn btn-xs btn-danger"><i
-                                                                class="mdi mdi-minus"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-4.jpg" alt="contact-img"
-                                                            title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Margeret V. Ligon</h5>
-                                                        <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="mdi mdi-currency-eur text-primary"></i> EUR
-                                                    </td>
-
-                                                    <td>
-                                                        25.08 EUR
-                                                    </td>
-
-                                                    <td>
-                                                        12.58 EUR
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-plus"></i></a>
-                                                        <a href="javascript: void(0);"
-                                                            class="btn btn-xs btn-danger"><i
-                                                                class="mdi mdi-minus"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-5.jpg" alt="contact-img"
-                                                            title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Jose D. Delacruz</h5>
-                                                        <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="mdi mdi-currency-cny text-primary"></i> CNY
-                                                    </td>
-
-                                                    <td>
-                                                        82.00 CNY
-                                                    </td>
-
-                                                    <td>
-                                                        30.83 CNY
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-plus"></i></a>
-                                                        <a href="javascript: void(0);"
-                                                            class="btn btn-xs btn-danger"><i
-                                                                class="mdi mdi-minus"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 36px;">
-                                                        <img src="assets/images/users/user-6.jpg" alt="contact-img"
-                                                            title="contact-img" class="rounded-circle avatar-sm" />
-                                                    </td>
-
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Luke J. Sain</h5>
-                                                        <p class="mb-0 text-muted"><small>Member Since 2017</small></p>
-                                                    </td>
-
-                                                    <td>
-                                                        <i class="mdi mdi-currency-btc text-primary"></i> BTC
-                                                    </td>
-
-                                                    <td>
-                                                        2.00816117 BTC
-                                                    </td>
-
-                                                    <td>
-                                                        1.00097036 BTC
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-plus"></i></a>
-                                                        <a href="javascript: void(0);"
-                                                            class="btn btn-xs btn-danger"><i
-                                                                class="mdi mdi-minus"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end col -->
-
-                        <div class="col-xl-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="dropdown float-end">
-                                        <a href="#" class="dropdown-toggle arrow-none card-drop"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="mdi mdi-dots-vertical"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Edit Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Export Report</a>
-                                            <!-- item-->
-                                            <a href="javascript:void(0);" class="dropdown-item">Action</a>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="header-title mb-3">Revenue History</h4>
-
-                                    <div class="table-responsive">
-                                        <table
-                                            class="table table-borderless table-nowrap table-hover table-centered m-0">
-
-                                            <thead class="table-light">
-                                                <tr>
-                                                    <th>Marketplaces</th>
-                                                    <th>Date</th>
-                                                    <th>Payouts</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Themes Market</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Oct 15, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $5848.68
-                                                    </td>
-
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-soft-warning text-warning">Upcoming</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Freelance</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Oct 12, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $1247.25
-                                                    </td>
-
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Share Holding</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Oct 10, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $815.89
-                                                    </td>
-
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Envato's Affiliates</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Oct 03, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $248.75
-                                                    </td>
-
-                                                    <td>
-                                                        <span class="badge bg-soft-danger text-danger">Overdue</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Marketing Revenue</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Sep 21, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $978.21
-                                                    </td>
-
-                                                    <td>
-                                                        <span
-                                                            class="badge bg-soft-warning text-warning">Upcoming</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>
-                                                        <h5 class="m-0 fw-normal">Advertise Revenue</h5>
-                                                    </td>
-
-                                                    <td>
-                                                        Sep 15, 2018
-                                                    </td>
-
-                                                    <td>
-                                                        $358.10
-                                                    </td>
-
-                                                    <td>
-                                                        <span class="badge bg-soft-success text-success">Paid</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <a href="javascript: void(0);" class="btn btn-xs btn-light"><i
-                                                                class="mdi mdi-pencil"></i></a>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div> <!-- end .table-responsive-->
-                                </div>
-                            </div> <!-- end card-->
-                        </div> <!-- end col -->
-                    </div>
-                    <!-- end row -->
-
-                </div> <!-- container -->
-
-            </div> <!-- content -->
-
+            @yield('admin')
             <!-- Footer Start -->
             <footer class="footer">
                 <div class="container-fluid">
@@ -2038,8 +1471,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-10.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-10.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2054,8 +1487,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-1.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2071,8 +1504,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-9.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-9.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status busy"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2092,8 +1525,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-2.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2108,8 +1541,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-4.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-4.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2124,8 +1557,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-5.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2141,8 +1574,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-6.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-6.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status online"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2157,8 +1590,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-7.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status busy"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2173,8 +1606,8 @@
                         <a href="javascript: void(0);" class="text-reset notification-item">
                             <div class="d-flex align-items-start noti-user-item">
                                 <div class="position-relative me-2">
-                                    <img src="assets/images/users/user-8.jpg" class="rounded-circle avatar-sm"
-                                        alt="user-pic">
+                                    <img src="  {{ asset('backend/assets/images/users/user-8.jpg') }}"
+                                        class="rounded-circle avatar-sm" alt="user-pic">
                                     <i class="mdi mdi-circle user-status away"></i>
                                 </div>
                                 <div class="overflow-hidden">
@@ -2403,19 +1836,19 @@
     <div class="rightbar-overlay"></div>
 
     <!-- Vendor js -->
-    <script src="assets/js/vendor.min.js"></script>
+    <script src="  {{ asset('backend/assets/js/vendor.min.js') }}"></script>
 
     <!-- Plugins js-->
-    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="  {{ asset('backend/assets/libs/flatpickr/flatpickr.min.js') }}"></script>
+    <script src="  {{ asset('backend/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 
-    <script src="assets/libs/selectize/js/standalone/selectize.min.js"></script>
+    <script src="  {{ asset('backend/assets/libs/selectize/js/standalone/selectize.min.js') }}"></script>
 
     <!-- Dashboar 1 init js-->
-    <script src="assets/js/pages/dashboard-1.init.js"></script>
+    <script src="  {{ asset('backend/assets/js/pages/dashboard-1.init.js') }}"></script>
 
     <!-- App js-->
-    <script src="assets/js/app.min.js"></script>
+    <script src="  {{ asset('backend/assets/js/app.min.js') }}"></script>
 
 </body>
 
