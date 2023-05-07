@@ -18,6 +18,13 @@ class AdminController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/logout');
+        // return redirect('/login');
+        // return redirect('/admin/logout/page');
+    }
+
+    public function AdminLogoutPage(Request $request)
+    {
+        return view('admin.admin_logout');
     }
 }
