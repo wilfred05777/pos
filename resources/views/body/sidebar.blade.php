@@ -48,12 +48,13 @@
                 <li class="menu-title">Navigation</li>
 
                 <li>
-                    <a href="#sidebarDashboards" data-bs-toggle="collapse">
+                    {{-- <a href="{{ route('dashboard') }}"  --}}
+                    <a href="{{ url('/dashboard') }}" data-bs-toggle="collapse">
                         <i class="mdi mdi-view-dashboard-outline"></i>
-                        <span class="badge bg-success rounded-pill float-end">4</span>
+                        {{-- <span class="badge bg-success rounded-pill float-end">4</span> --}}
                         <span> Dashboards </span>
                     </a>
-                    <div class="collapse" id="sidebarDashboards">
+                    {{-- <div class="collapse" id="sidebarDashboards">
                         <ul class="nav-second-level">
                             <li>
                                 <a href="index.html">Dashboard 1</a>
@@ -68,12 +69,12 @@
                                 <a href="dashboard-4.html">Dashboard 4</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </li>
 
                 <li class="menu-title mt-2">Apps</li>
 
-                <li>
+                {{-- <li>
                     <a href="apps-calendar.html">
                         <i class="mdi mdi-calendar"></i>
                         <span> Calendar </span>
@@ -85,7 +86,7 @@
                         <i class="mdi mdi-forum-outline"></i>
                         <span> Chat </span>
                     </a>
-                </li>
+                </li> --}}
 
                 <li>
                     <a href="#sidebarEcommerce" data-bs-toggle="collapse">
@@ -180,7 +181,7 @@
                     </div>
                 </li>
 
-                <li>
+                {{-- <li>
                     <a href="apps-social-feed.html">
                         <span class="badge bg-pink float-end">Hot</span>
                         <i class="mdi mdi-rss"></i>
@@ -278,7 +279,7 @@
                         <i class="mdi mdi-folder-star-outline"></i>
                         <span> File Manager </span>
                     </a>
-                </li>
+                </li> --}}
 
                 <li class="menu-title mt-2">Custom</li>
 
@@ -393,7 +394,7 @@
                     </div>
                 </li>
 
-                <li>
+                {{-- <li>
                     <a href="#sidebarLayouts" data-bs-toggle="collapse">
                         <i class="mdi mdi-cellphone-link"></i>
                         <span class="badge bg-blue float-end">New</span>
@@ -770,7 +771,7 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> --}}
             </ul>
 
         </div>

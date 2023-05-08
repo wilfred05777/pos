@@ -11,7 +11,7 @@
                                 <i class="fe-search"></i>
                             </button>
                         </div>
-                        <div class="dropdown-menu dropdown-lg" id="search-dropdown">
+                        {{-- <div class="dropdown-menu dropdown-lg" id="search-dropdown">
                             <!-- item-->
                             <div class="dropdown-header noti-title">
                                 <h5 class="text-overflow mb-2">Found 22 results</h5>
@@ -68,7 +68,7 @@
                                 </a>
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </form>
             </li>
@@ -93,7 +93,7 @@
                 </a>
             </li>
 
-            <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
+            {{-- <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-bs-toggle="dropdown"
                     href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <i class="fe-grid noti-icon"></i>
@@ -133,15 +133,13 @@
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="  {{ asset('backend/assets/images/brands/dropbox.png') }}"
-                                        alt="dropbox">
+                                    <img src="  {{ asset('backend/assets/images/brands/dropbox.png') }}" alt="dropbox">
                                     <span>Dropbox</span>
                                 </a>
                             </div>
                             <div class="col">
                                 <a class="dropdown-icon-item" href="#">
-                                    <img src="  {{ asset('backend/assets/images/brands/g-suite.png') }}"
-                                        alt="G Suite">
+                                    <img src="  {{ asset('backend/assets/images/brands/g-suite.png') }}" alt="G Suite">
                                     <span>G Suite</span>
                                 </a>
                             </div>
@@ -150,9 +148,9 @@
                     </div>
 
                 </div>
-            </li>
+            </li> --}}
 
-            <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
+            {{-- <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-bs-toggle="dropdown"
                     href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <img src="  {{ asset('backend/assets/images/flags/us.jpg') }}" alt="user-image" height="16">
@@ -184,7 +182,7 @@
                     </a>
 
                 </div>
-            </li>
+            </li> --}}
 
             <li class="dropdown notification-list topbar-dropdown">
                 <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#"
@@ -274,8 +272,7 @@
                     </div>
 
                     <!-- All-->
-                    <a href="javascript:void(0);"
-                        class="dropdown-item text-center text-primary notify-item notify-all">
+                    <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
                         View all
                         <i class="fe-arrow-right"></i>
                     </a>
@@ -378,7 +375,7 @@
                 <!-- End mobile menu toggle-->
             </li>
 
-            <li class="dropdown d-none d-xl-block">
+            {{-- <li class="dropdown d-none d-xl-block">
                 <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#"
                     role="button" aria-haspopup="false" aria-expanded="false">
                     Create New
@@ -418,9 +415,9 @@
                     </a>
 
                 </div>
-            </li>
+            </li> --}}
 
-            <li class="dropdown dropdown-mega d-none d-xl-block">
+            {{-- <li class="dropdown dropdown-mega d-none d-xl-block">
                 <a class="nav-link dropdown-toggle waves-effect waves-light" data-bs-toggle="dropdown" href="#"
                     role="button" aria-haspopup="false" aria-expanded="false">
                     Mega Menu
@@ -523,7 +520,7 @@
                     </div>
 
                 </div>
-            </li>
+            </li> --}}
         </ul>
         <div class="clearfix"></div>
     </div>
