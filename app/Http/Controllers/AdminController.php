@@ -27,4 +27,10 @@ class AdminController extends Controller
     {
         return view('admin.admin_logout');
     }
+
+    public function AdminProfile(Request $request)
+    {
+        $id = Auth::user()->id;
+        $adminData = User::find($id);
+    }
 }
