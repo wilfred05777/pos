@@ -1,5 +1,7 @@
 @extends('admin_dashboard')
 @section('admin')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <div class="content">
         <!-- Start Content-->
         <div class="container-fluid">
@@ -34,7 +36,7 @@
 
                             <div class="text-start mt-3">
                                 <p class="text-muted mb-2 font-13"><strong>Full Name :</strong> <span class="ms-2">
-                                        {{ $adminData->name }}
+                                        {{ $adminData->name }} {{ $adminData->last_name }}
                                     </span></p>
 
                                 <p class="text-muted mb-2 font-13"><strong>Mobile :</strong><span class="ms-2">
@@ -88,21 +90,19 @@
                                     <div class="row">
 
                                         <div class="col-md-6">
-                                            <img src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
-                                                class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                                             <div class="mb-3">
 
                                                 <label for="" class="form-label">Profile Image</label>
-                                                <input type="file" name="photo" id="photo" class="form-control">
+                                                <input type="file" name="photo" id="image" class="form-control">
                                             </div>
                                         </div>
-                                        {{-- <div class="col-md-12">
-                                      <div class="mb-3">
-                                          <label for="" class="form-label">Profile Image</label>
-                                          <img src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
-                                              class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
-                                      </div>
-                                  </div> --}}
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <img id="showImage"
+                                                    src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
+                                                    class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                            </div>
+                                        </div>
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
@@ -162,4 +162,16 @@
             <!-- end row-->
         </div> <!-- container -->
     </div> <!-- content -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#image').change(function(e) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#showImage').attr('src', e.target.result)
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            })
+        })
+    </script>
 @endsection
