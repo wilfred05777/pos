@@ -282,7 +282,7 @@
 
             @php
                 $id = Auth::user()->id;
-                $admindata = App\Models\User::find($id);
+                $adminData = App\Models\User::find($id);
             @endphp
 
             <li class="dropdown notification-list topbar-dropdown">
