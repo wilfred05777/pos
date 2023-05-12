@@ -25,6 +25,9 @@
                 <div class="col-lg-4 col-xl-4">
                     <div class="card text-center">
                         <div class="card-body">
+                            {{-- <img src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
+                                class="rounded-circle avatar-lg img-thumbnail" alt="profile-image"> --}}
+
                             <img src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
                                 class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                             <h4 class="mb-0">{{ $adminData->name }}</h4>
@@ -84,7 +87,12 @@
                                 </li>
                             </ul>
                             <div class="tab-pane" id="settings">
-                                <form>
+
+                                {{-- form starts here --}}
+                                <form method="post" action="{{ route('admin.profile.store') }}"
+                                    enctype="multipart/form-data">
+                                    @csrf
+
                                     <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>
                                         Personal Info</h5>
                                     <div class="row">
