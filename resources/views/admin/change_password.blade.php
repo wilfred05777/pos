@@ -34,8 +34,8 @@
                             <!-- end timeline content-->
 
                             <div class="tab-pane" id="settings">
-                                {{-- <form method="post" action="{{ route('admin.profile.store') }}" --}}
-                                <form method="post" action="{{ route('update.password') }}" enctype="multipart/form-data">
+                                {{-- <form method="post" action="{{ route('admin.profile.store') }}" enctype="multipart/form-data" --}}
+                                <form method="post" action="{{ route('update.password') }}">
                                     @csrf
 
 
