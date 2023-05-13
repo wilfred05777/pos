@@ -91,15 +91,20 @@
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
                                         <label class="form-check-label" for="checkbox-signin">Remember me</label>
-                                    </div>
-                                </div>
 
+                                    </div>
+
+                                </div>
                                 <div class="text-center d-grid">
                                     <button class="btn btn-primary" type="submit"> Log In </button>
                                 </div>
 
                             </form>
+                            <div class="mt-3">
+                                <label class="form-check-label" for="">Don't have an account
+                                    yet?</label> <a href="{{ route('register') }}">Register</a>
 
+                            </div>
                             {{-- <div class="text-center">
                                 <h5 class="mt-3 text-muted">Sign in with</h5>
                                 <ul class="social-list list-inline mt-3 mb-0">
