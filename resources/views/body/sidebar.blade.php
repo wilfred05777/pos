@@ -91,18 +91,18 @@
                 <li>
                     <a href="#sidebarEcommerce" data-bs-toggle="collapse">
                         <i class="mdi mdi-cart-outline"></i>
-                        <span> Ecommerce </span>
+                        <span> Employee Manage </span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarEcommerce">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="ecommerce-dashboard.html">Dashboard</a>
+                                <a href="ecommerce-dashboard.html">All Employee</a>
                             </li>
                             <li>
-                                <a href="ecommerce-products.html">Products</a>
+                                <a href="ecommerce-products.html">Add Employee</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="ecommerce-product-detail.html">Product Detail</a>
                             </li>
                             <li>
@@ -125,7 +125,7 @@
                             </li>
                             <li>
                                 <a href="ecommerce-checkout.html">Checkout</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
