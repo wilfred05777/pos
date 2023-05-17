@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     use HasFactory;
+
+    // everything in employee table is fillable using
     protected $guarded = [];
 }
