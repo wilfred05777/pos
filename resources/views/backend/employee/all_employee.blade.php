@@ -33,6 +33,7 @@
                                     <tr>
                                         <th>Sl</th>
                                         <th>Image</th>
+                                        <th>Name</th>
                                         <th>Email</th>
                                         <th>Phone</th>
                                         <th>Salary</th>
@@ -42,14 +43,23 @@
 
 
                                 <tbody>
-                                    <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
-                                    </tr>
+                                    @foreach ($employee as $key => $item)
+                                        <tr>
+                                            <td>{{ $key + 1 }}</td>
+                                            <td><img src="{{ asset($item->image) }}" style="width:50px;" height="40px;">
+                                            </td>
+                                            <td>{{ $item->name }}</td>
+                                            <td>{{ $item->email }}</td>
+                                            <td>{{ $item->phone }}</td>
+                                            <td>{{ $item->salary }}</td>
+                                            <td>
+                                                <a a href=""
+                                                    class="btn btn-blue rounded-pill waves-effect waves-light "></a>
+                                                <a a href=""
+                                                    class="btn btn-danger rounded-pill waves-effect waves-light"></a>
+                                            </td>
+                                        </tr>
+                                    @endforeach
 
                                 </tbody>
                             </table>

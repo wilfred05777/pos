@@ -11,7 +11,7 @@ class EmployeeController extends Controller
     //
     public function AllEmployee()
     {
-        $employee = Employee::latest()->get();
+        $employee = Employee::latest()->get(); 
         //folder view/backend/employee/all_employee.blade.php
         return view('backend.employee.all_employee', compact('employee'));
     } // end method AllEmployee()
