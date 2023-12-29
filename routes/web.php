@@ -52,5 +52,6 @@ Route::middleware(['auth'])->group(function () {
   // Employee All Route
   Route::controller(EmployeeController::class)->group(function () {
     Route::get('/all/employee', 'AllEmployee')->name('all.employee');
+    Route::get('/add/employee', 'AddEmployee')->name('add.employee');
   });
 }); // End User Middleware
