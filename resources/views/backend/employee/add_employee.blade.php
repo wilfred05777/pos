@@ -37,7 +37,7 @@
                             <div class="tab-pane" id="settings">
 
                                 {{-- form starts here --}}
-                                <form method="post" action="{{ route('admin.profile.store') }}"
+                                <form method="post" action="{{ route('employee.store') }}"
                                     enctype="multipart/form-data">
                                     @csrf
 
