@@ -48,32 +48,112 @@
                                         <div class="col-md-6">
                                             <div class="mb-3">
 
-                                                <label for="" class="form-label">Profile Image</label>
-                                                <input type="file" name="photo" id="image" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <img id="showImage"
-                                                    src="{{ !empty($adminData->photo) ? url('upload/admin_image/' . $adminData->photo) : url('upload/no_image.jpg') }}"
-                                                    class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                                <label for="firstname" class="form-label">Employee Name</label>
+                                                <input type="text" name="name" id="image" class="form-control @error('old_password') is-invalid @enderror">
+                                                @error('old_password')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="name" class="form-label">
-                                                    Name</label>
-                                                <input type="text" name="name" class="form-control" id="name"
-                                                    value="{{ $adminData->name }}">
+
+                                                <label for="email" class="form-label">Employee Email</label>
+                                                <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror">
+                                                @error('email')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
                                             </div>
                                         </div>
+
                                         <div class="col-md-6">
+                                            <div class="mb-3">
+
+                                                <label for="phone" class="form-label">Employee Phone</label>
+                                                <input type="text" name="phone" id="phone" class="form-control @error('phone') is-invalid @enderror">
+                                                @error('phone')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Employee Address</label>
+                                                <input type="text" name="address" id="address" class="form-control @error('address') is-invalid @enderror">
+                                                @error('address')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="experience" class="form-label">Employee Experience</label>
+                                                <select class="form-select" id="example-select">
+                                                   <option selected="">Select Year</option>
+                                                   <option value="1 Year">1 Year</option>
+                                                   <option value="2 Years">2 Years</option>
+                                                   <option value="3 Years">3 Years</option>
+                                                   <option value="4 Years">4 Years</option>
+                                                   <option value="5 Years">5 Years</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="salary" class="form-label">Employee Salary</label>
+                                                <input type="text" name="salary" id="salary" class="form-control @error('salary') is-invalid @enderror">
+                                                @error('salary')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="vacation" class="form-label">Employee Vacation</label>
+                                                <input type="text" name="vacation" id="vacation" class="form-control @error('vacation') is-invalid @enderror">
+                                                @error('vacation')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="city" class="form-label">Employee City</label>
+                                                <input type="text" name="city" id="city" class="form-control @error('city') is-invalid @enderror">
+                                                @error('city')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="example-fileinput" class="form-label">Employee Image</label>
+                                                <input type="file" name="image" id="image" class="form-control" alt="profile-image" >
+                                               
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="example-fileinput" class="form-label"></label>
+                                                <img id="showImage" src="{{ url('upload/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" >
+                                               
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="first_name" class="form-label">
                                                     First Name</label>
                                                 <input type="text" name="first_name" class="form-control" id="first_name"
-                                                    value="{{ $adminData->first_name }}">
+                                                    value="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -81,7 +161,7 @@
                                                 <label for="last_name" class="form-label">First
                                                     Last Name</label>
                                                 <input type="text" name="last_name" class="form-control"
-                                                    id="last_name" value="{{ $adminData->last_name }}">
+                                                    id="last_name" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -89,7 +169,7 @@
                                                 <label for="email" class="form-label">Email
                                                 </label>
                                                 <input type="email" class="form-control" id="email" name="email"
-                                                    value="{{ $adminData->email }}">
+                                                    value="">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -97,9 +177,10 @@
                                                 <label for="phone" class="form-label">Phone
                                                 </label>
                                                 <input type="text" class="form-control" id="number" name="phone"
-                                                    value="{{ $adminData->phone }}">
+                                                    value="">
                                             </div>
-                                        </div><!-- end col -->
+                                        </div> -->
+                                        <!-- end col -->
 
 
 
