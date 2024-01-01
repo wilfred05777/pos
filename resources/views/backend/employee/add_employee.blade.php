@@ -49,8 +49,8 @@
                                             <div class="mb-3">
 
                                                 <label for="firstname" class="form-label">Employee Name</label>
-                                                <input type="text" name="name" id="image" class="form-control @error('old_password') is-invalid @enderror">
-                                                @error('old_password')
+                                                <input type="text" name="name" id="image" class="form-control @error('name') is-invalid @enderror">
+                                                @error('name')
                                                 <span class="text-danger">{{$message}}</span>
                                                 @enderror
                                             </div>
@@ -91,14 +91,17 @@
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="experience" class="form-label">Employee Experience</label>
-                                                <select class="form-select" id="example-select">
-                                                   <option selected="">Select Year</option>
+                                                <select name="experience" class="form-select @error('experience') is-invalid @enderror" id="example-select">
+                                                   <option selected disabled>Select Year</option>
                                                    <option value="1 Year">1 Year</option>
                                                    <option value="2 Years">2 Years</option>
                                                    <option value="3 Years">3 Years</option>
                                                    <option value="4 Years">4 Years</option>
                                                    <option value="5 Years">5 Years</option>
                                                 </select>
+                                                @error('experience')
+                                                <span class="text-danger"> {{ $messge}} </span>
+                                                @enderror
                                             </div>
                                         </div>
 
@@ -136,8 +139,10 @@
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label for="example-fileinput" class="form-label">Employee Image</label>
-                                                <input type="file" name="image" id="image" class="form-control" alt="profile-image" >
-                                               
+                                                <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror" alt="profile-image" >
+                                                @error('image')
+                                                <span class="text-danger">{{$message}}</span>
+                                                @enderror
                                             </div>
                                         </div>
 
