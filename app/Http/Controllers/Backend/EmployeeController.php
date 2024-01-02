@@ -18,12 +18,14 @@ class EmployeeController extends Controller
         return view('backend.employee.all_employee', compact('employee'));
     } // end method AllEmployee()
 
-    public function AddEmployee(){
+    public function AddEmployee()
+    {
         return view('backend.employee.add_employee');
     }
 
 
-    public function StoreEmployee(Request $request){
+    public function StoreEmployee(Request $request)
+    {
 
         // note: unique it will validate if the email already exist in the database
         
@@ -71,6 +73,14 @@ class EmployeeController extends Controller
             'alert-type' => 'success',
         );
         return redirect()->route('all.employee')->with($notification);
+
+    }
+
+    public function EditEmployee($id){
+
+        $employee = Employee::findOrFail($id);
+
+        return view('backend.employee.edit_employee', compact('employee'));
 
     }
 }
