@@ -11,7 +11,7 @@
                     <div class="page-title-box">
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <a href="{{route('add.employee') }}" class="btn btn-primary rounded-pill waves-effect waves-light ">Add
+                                <a href="{{ route('add.employee') }} " class="btn btn-primary rounded-pill waves-effect waves-light ">Add
                                     Employee</a>
                                 {{-- <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
                                 <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
@@ -57,6 +57,7 @@
                                             <td>
                                                 <a href="{{ route('edit.employee', $item->id) }}"
                                                     class="btn btn-blue rounded-pill waves-effect waves-light ">Edit</a>
+                                                    
                                                 <a href=""
                                                     class="btn btn-danger rounded-pill waves-effect waves-light">Delete</a>
                                             </td>
