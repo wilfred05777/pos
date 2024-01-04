@@ -36,7 +36,7 @@ class EmployeeController extends Controller
             'address' => 'required|max:400',
             'salary' => 'required|max:200',
             'vacation' => 'required|max:200',
-            'experince' => 'required',
+            'experience' => 'required',
             'image' => 'required',
         ],
             // below custom message for validation
