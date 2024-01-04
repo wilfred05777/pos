@@ -100,7 +100,7 @@
                                 <a href="{{ route('all.employee') }}">All Employee</a>
                             </li>
                             <li>
-                                <a href="ecommerce-products.html">Add Employee</a>
+                                <a href="{{route('add.employee')}}">Add Employee</a>
                             </li>
                             {{-- <li>
                                 <a href="ecommerce-product-detail.html">Product Detail</a>
