@@ -4,7 +4,8 @@
 /public/storage
 /storage/*.key
 /vendor
-/public/upload/admin_image/*
+/public/upload/admin_image/
+/public/upload/
 
 .env.backup
 .env.production

@@ -13,7 +13,7 @@ class EmployeeController extends Controller
     //
     public function AllEmployee()
     {
-        $employee = Employee::latest()->get(); 
+        $employee = Employee::latest()->get();
         //folder view/backend/employee/all_employee.blade.php
         return view('backend.employee.all_employee', compact('employee'));
     } // end method AllEmployee()
@@ -28,7 +28,7 @@ class EmployeeController extends Controller
     {
 
         // note: unique it will validate if the email already exist in the database
-        
+
         $validateData = $request->validate([
             'name' => 'required|max:200',
             'email' => 'required|unique:employees|max:200',
@@ -41,9 +41,9 @@ class EmployeeController extends Controller
         ],
             // below custom message for validation
         [
-            'name.required' => 'This Employee Name Field is Required', 
+            'name.required' => 'This Employee Name Field is Required',
         ]
-    
+
     );
 
         $image = $request->file('image');
@@ -65,7 +65,7 @@ class EmployeeController extends Controller
             'salary' => $request->salary,
             'city' => $request->city,
             'created_at' => Carbon::now(), /** present date */
-           
+
         ]);
 
         $notification = array(
@@ -83,4 +83,18 @@ class EmployeeController extends Controller
         return view('backend.employee.edit_employee', compact('employee'));
 
     }
+
+
+    public function DeleteEmployee($id){
+        $employee_img = Employee::findOrFail($id);
+        $img = $employee_img->image;
+        unlink($img);
+        Employee::findOrFail($id)->delete();
+        $notification = array(
+            'message' => 'Employee Deleted Successfully',
+            'alert-type' => 'success'
+        );
+        return redirect()->back()->with($notification);
+    } // End Method
+
 }

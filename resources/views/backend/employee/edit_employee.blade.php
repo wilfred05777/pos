@@ -22,7 +22,7 @@
             </div>
             <!-- end page title -->
             <div class="row">
-                
+
                 <div class="col-lg-8 col-xl-12">
                     <div class="card">
                         <div class="card-body">
@@ -77,7 +77,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        
+
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="address" class="form-label">Employee Address</label>
@@ -155,7 +155,7 @@
                                             <div class="mb-3">
                                                 <label for="example-fileinput" class="form-label"></label>
                                                 <img id="showImage" src="{{ asset($employee->image) }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" >
-                                               
+
                                             </div>
                                         </div>
                                         <!-- <div class="col-md-6">
