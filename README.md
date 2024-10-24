@@ -1,11 +1,15 @@
+## Introduction
+
+This POS (Point of Sale) system is built on the Laravel framework, which allows users to manage sales, customers, and products in a retail setting. The API enables developers to integrate the POS system with their applications, allowing them to perform CRUD operations on the system's resources.
+
 ## Running on local 
 - root folder 
     - npm install
     - composer install
 
-## Introduction
+## Docker env
+    docker-compose up --build
 
-This POS (Point of Sale) system is built on the Laravel framework, which allows users to manage sales, customers, and products in a retail setting. The API enables developers to integrate the POS system with their applications, allowing them to perform CRUD operations on the system's resources.
 
 ## Endpoints
 
