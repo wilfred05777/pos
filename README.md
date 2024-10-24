@@ -4,8 +4,8 @@ This POS (Point of Sale) system is built on the Laravel framework, which allows 
 
 ## Running on local 
 - root folder 
-    - npm install
-    - composer install
+    npm install
+    composer install
 
 ## Docker env
     docker-compose up --build
