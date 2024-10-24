@@ -42,6 +42,7 @@
         </div>
 
         <!-- Email Photo -->
+        <!-- issue with the image won't persist upon signup -->
         <div class="mt-4">
             <x-input-label for="photo" :value="__('Photo')" />
             <x-text-input id="photo" class="block mt-1 w-full" type="file" name="photo" :value="old('photo')"
