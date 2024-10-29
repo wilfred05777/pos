@@ -29,12 +29,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        $notification = array(
-            'message' => 'Dashboard Login Successfully',
-            'alert-type' => 'info'
-        );
-
-        return redirect()->intended(RouteServiceProvider::HOME)->with($notification);
+        return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**
