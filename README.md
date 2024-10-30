@@ -2,11 +2,19 @@
 
 This POS (Point of Sale) system is built on the Laravel framework, which allows users to manage sales, customers, and products in a retail setting. The API enables developers to integrate the POS system with their applications, allowing them to perform CRUD operations on the system's resources.
 
+### WSL2 setup
+-   https://www.c-sharpcorner.com/article/how-to-install-windows-subsystem-for-linux-wsl2-on-windows-11/
+
 ## Running on local 
 - root folder 
     - npm install
     - composer install
     - php artisan migrate
+    - npm run dev
+
+## php issue
+    - C:\xampp\php\php.ini 
+    - ;extension=gd change to extension=gd
 
 ## Docker env
     docker-compose up --build
